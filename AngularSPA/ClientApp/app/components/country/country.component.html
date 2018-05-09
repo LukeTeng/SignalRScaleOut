@@ -1,0 +1,24 @@
+<h1>country list</h1>
+
+<p>Country list - getting data from backend.</p>
+
+
+<table >
+    <thead>
+        <tr>
+            <th width="10%">ID</th>
+            <th width="25%">Country Name</th>
+            <th width="25%">Country Code</th>
+            <th width="25%">Comments</th>
+        </tr>
+    </thead>
+    <tbody  *ngFor="let country of countries; index as i">
+        <tr>
+            <td> {{ i + 1 }}</td>
+            <td>{{ country.countryName }}</td>
+            <td>{{ country.countryCode }}</td>
+            <td>{{ country.commments }}</td>
+        </tr>
+    </tbody>
+</table>
+
